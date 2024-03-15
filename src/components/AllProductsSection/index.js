@@ -76,7 +76,7 @@ class AllProductsSection extends Component {
     productList: [],
     apiStatus: apiStatusConstants.initial,
     activeOptionId: sortbyOptions[0].optionId,
-    activeCategoryId: categoryOptions[0].categoryId,
+    activeCategoryId: '',
     searchInput: '',
     activeRatingId: '',
   }
@@ -220,7 +220,7 @@ class AllProductsSection extends Component {
     this.setState(
       {
         searchInput: '',
-        activeCategoryId: categoryOptions[0].categoryId,
+        activeCategoryId: '',
         activeRatingId: '',
       },
       this.getProducts,
